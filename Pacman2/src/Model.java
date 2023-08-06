@@ -67,7 +67,7 @@ public class Model extends JPanel implements ActionListener {
     private void initVariables() {
 
         screenData = new short[N_BLOCKS * N_BLOCKS];
-        d = new Dimension(401, 401);
+        d = new Dimension(400, 400);
         ghost_x = new int[MAX_GHOSTS];
         ghost_dx = new int[MAX_GHOSTS];
         ghost_y = new int[MAX_GHOSTS];
@@ -154,7 +154,7 @@ public class Model extends JPanel implements ActionListener {
 
         for (int i = 0; i < N_GHOSTS; i++) {
             if (ghost_x[i] % BLOCK_SIZE == 0 && ghost_y[i] % BLOCK_SIZE == 0) {
-                pos = ghost_x[i] / BLOCK_SIZE + N_BLOCKS * (int) (ghost_y[i] / BLOCK_SIZE);
+                pos = ghost_x[i] / BLOCK_SIZE + N_BLOCKS * (ghost_y[i] / BLOCK_SIZE);
 
                 count = 0;
 
