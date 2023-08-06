@@ -12,7 +12,6 @@ public class Game extends JFrame {
         pac.setSize(380, 420);
         pac.setDefaultCloseOperation(EXIT_ON_CLOSE);
         pac.setLocationRelativeTo(null);
-
     }
 }
                 
