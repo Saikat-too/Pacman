@@ -76,7 +76,7 @@ public class Model extends JPanel implements ActionListener {
         dx = new int[4];
         dy = new int[4];
 
-        timer = new Timer(400, this);
+        timer = new Timer(300, this);
         timer.start();
     }
     private void playGame(Graphics2D g2d) {
