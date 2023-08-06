@@ -11,7 +11,6 @@ public class Model extends JPanel implements ActionListener {
     private final int N_BLOCKS = 15;
     private final int SCREEN_SIZE = N_BLOCKS * BLOCK_SIZE;
     private final int MAX_GHOSTS = 12;
-    private final int PACMAN_SPEED = 6;
     private final short levelData[] = {
             19, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 22,
             17, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 20,
@@ -255,6 +254,7 @@ public class Model extends JPanel implements ActionListener {
                 pacmand_y = 0;
             }
         }
+        int PACMAN_SPEED = 6;
         pacman_x = pacman_x + PACMAN_SPEED * pacmand_x;
         pacman_y = pacman_y + PACMAN_SPEED * pacmand_y;
     }
