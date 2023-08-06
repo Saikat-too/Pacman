@@ -227,7 +227,7 @@ public class Model extends JPanel implements ActionListener {
         short ch;
 
         if (pacman_x % BLOCK_SIZE == 0 && pacman_y % BLOCK_SIZE == 0) {
-            pos = pacman_x / BLOCK_SIZE + N_BLOCKS * (int) (pacman_y / BLOCK_SIZE);
+            pos = pacman_x / BLOCK_SIZE + N_BLOCKS * (pacman_y / BLOCK_SIZE);
             ch = screenData[pos];
 
             if ((ch & 16) != 0) {
