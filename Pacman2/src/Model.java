@@ -29,7 +29,6 @@ public class Model extends JPanel implements ActionListener {
             25, 24, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 24, 28
     };
     private final int validSpeeds[] = {1, 2, 3, 4, 6, 8};
-    private final int maxSpeed = 6;
     private Dimension d;
     private boolean inGame = false;
     private boolean dying = false;
@@ -129,6 +128,7 @@ public class Model extends JPanel implements ActionListener {
             if (N_GHOSTS < MAX_GHOSTS) {
                 N_GHOSTS++;
             }
+            int maxSpeed = 6;
             if (currentSpeed < maxSpeed) {
                 currentSpeed++;
             }
