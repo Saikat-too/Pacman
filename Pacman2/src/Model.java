@@ -28,7 +28,7 @@ public class Model extends JPanel implements ActionListener {
             17, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 20,
             25, 24, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 24, 28
     };
-    private final int validSpeeds[] = {1, 2, 3, 4, 6, 8};
+    private final int[] validSpeeds = {1, 2, 3, 4, 6, 8};
     private Dimension d;
     private boolean inGame = false;
     private boolean dying = false;
