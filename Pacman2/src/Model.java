@@ -11,7 +11,7 @@ public class Model extends JPanel implements ActionListener {
     private final int N_BLOCKS = 15;
     private final int SCREEN_SIZE = N_BLOCKS * BLOCK_SIZE;
     private final int MAX_GHOSTS = 12;
-    private final short levelData[] = {
+    private final short[] levelData = {
             19, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 22,
             17, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 20,
             17, 16, 26, 26, 26, 26, 18, 18, 18, 26, 26, 26, 26, 17, 20,
