@@ -1,1 +1,1 @@
-# Pacman
+This game is inspired by 1980's japanese famous game pacman.The game is easy at first level there is 3 ghosts if you able to eat every foods then the ghost will increase by 1 and you move to next level.As level increases the speed will increase and the amount of ghosts also.Try to win it and secure all levels .Good luck and have fun.Anyway life is boring!!!!!
