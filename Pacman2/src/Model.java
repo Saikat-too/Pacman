@@ -12,6 +12,7 @@ public class Model extends JPanel implements ActionListener {
     private final int SCREEN_SIZE = N_BLOCKS * BLOCK_SIZE;
     private final int PAC_ANIM_DELAY = 2;
     private final int PACMAN_ANIM_COUNT = 4;
+    private int GhostPos = 0;
     
     private int pacAnimCount = PAC_ANIM_DELAY;
     private int pacAnimDir = 1;
@@ -151,6 +152,7 @@ public class Model extends JPanel implements ActionListener {
         if (finished) {
 
             score += 50;
+            GhostPos=0;
 
             if (N_GHOSTS < MAX_GHOSTS) {
                 N_GHOSTS++;
@@ -355,14 +357,10 @@ public class Model extends JPanel implements ActionListener {
         for (i = 0; i < N_BLOCKS * N_BLOCKS; i++) {
             screenData[i] = levelData[i];
         }
-        continueLevel();
-    }
-
-    private void continueLevel() {
         int dx = 1;
         int random;
-
-        for (int i = 0; i < N_GHOSTS; i++) {
+       
+        for (i = 0; i < N_GHOSTS; i++) {
 
             ghost_y[i] = 4*BLOCK_SIZE; //start position
             ghost_x[i] =4*BLOCK_SIZE;
@@ -375,6 +373,11 @@ public class Model extends JPanel implements ActionListener {
             }
             ghostSpeed[i] = validSpeeds[random];
         }
+        continueLevel();
+    }
+
+    private void continueLevel() {
+        
         pacman_x = 7 * BLOCK_SIZE;  //start position
         pacman_y = 11 * BLOCK_SIZE;
         pacmand_x = 0;    //reset direction move
